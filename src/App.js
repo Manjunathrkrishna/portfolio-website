@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="hero">
+        <h1>Hi, I'm <span className="highlight">Manjunath</span> 👋</h1>
+        <h2>Senior Full Stack Developer</h2>
+        <p className="stack">React | Python | Flask | Django | FastAPI | AWS</p>
+        <div className="buttons">
+          <a href="https://github.com/Manjunathrkrishna" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/manjunath-ramakrishna-14266915a/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
     </div>
   );
 }
