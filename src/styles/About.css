@@ -1,0 +1,14 @@
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    white-space: nowrap; /* keeps it on one line */
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 1.5rem;
+      white-space: normal; /* allow wrap if very small screen */
+    }
+  }
+  

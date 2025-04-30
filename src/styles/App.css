@@ -1,0 +1,323 @@
+/* @import url("/portfolio-font-update.css"); */
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    /* font-family: 'Inter', sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  
+
+  /* Make the entire app full height */
+html, body {
+    height: 100%;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .page-wrapper {
+    flex: 1;
+  }
+  
+  /* Footer already styled, no changes needed */
+  .footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #161b22;
+    color: #8b949e;
+    margin-top: auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #161b22;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar a {
+    color: #c9d1d9;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+
+  }
+  
+  .navbar a:hover {
+    color: #58a6ff;
+  }
+  
+  /* General Page Wrapper */
+  .page-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #161b22;
+    border-radius: 16px;
+    box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.05);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .hero h2 {
+    font-weight: 400;
+    color: #8b949e;
+  }
+  
+  .stack {
+    font-style: italic;
+    color: #58a6ff;
+  }
+  
+  /* About Section */
+  .about {
+    background: #161b22;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.05);
+    line-height: 1.7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .about div {
+    flex: 1 1 300px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #c9d1d9;
+  }
+  
+  .about img {
+    flex: 1 1 250px;
+    max-width: 250px;
+    border-radius: 4%;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    margin: auto;
+    display: block;
+  }
+  
+  /* Projects */
+  .projects-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #58a6ff; /* or #f9f9f9 if you prefer bright white */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+  }
+  
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 28px rgba(255, 255, 255, 0.1);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    color: #ffffff;
+  }
+  
+  .project-card p {
+    color: #c9d1d9;
+  }
+  
+  .project-links {
+    margin-top: 20px;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    background: #238636;
+    color: white;
+    padding: 10px 14px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background: #2ea043;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #161b22;
+    color: #8b949e;
+    margin-top: 60px;
+  }
+  
+  /* Resume Button */
+  .btn-resume {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #10198e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+  
+  .btn-resume:hover {
+    background-color: #2315df;
+  }
+  
+  /* Contact */
+  .contact {
+    text-align: center;
+    background-color: #161b22;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .contact p {
+    font-size: 1rem;
+    color: #8b949e;
+    margin-bottom: 2rem;
+  }
+  
+
+
+  /* background-color: #10198e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+  
+  .btn-resume:hover {
+    background-color: #2315df; */
+  .contact-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #10198e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #2315df;
+  }
+  
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: #161b22;
+    box-shadow: 0 6px 18px rgba(255,255,255,0.05);
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .about div {
+      order: 2;
+    }
+  
+    .about img {
+      order: 1;
+      margin: 0 auto 1.5rem;
+      max-width: 180px;
+    }
+  }
+  
+
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    white-space: nowrap; /* keeps it on one line */
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 1.5rem;
+      white-space: normal; /* allow wrap if very small screen */
+    }
+  }
+  

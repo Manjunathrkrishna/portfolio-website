@@ -1,0 +1,36 @@
+.skills-section {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    color: #58a6ff;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .skills-grid div {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .skills-grid div:hover {
+    transform: translateY(-4px);
+    border-color: #58a6ff;
+  }
+  
