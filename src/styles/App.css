@@ -248,17 +248,7 @@ html, body {
   
 
 
-  /* background-color: #10198e;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
-  }
-  
-  .btn-resume:hover {
-    background-color: #2315df; */
+ 
   .contact-button {
     display: inline-block;
     margin: 0.5rem;

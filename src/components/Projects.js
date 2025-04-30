@@ -20,6 +20,15 @@ const projects = [
     ],
   },
   {
+    title: 'React Dev Manual (In Progress)',
+    description: 'React learning guide with accordion-based explanations, Redux, hooks, and modern UI.',
+    links: [
+      { label: 'Live Site', url: 'https://learn-react-with-me.netlify.app' },
+      { label: 'GitHub Repo', url: 'https://github.com/Manjunathrkrishna/learn-react-with-me' }
+    ]
+  },
+  
+  {
     title: 'React Hooks Demo App (In Progress)',
     description: 'A demo app showcasing useState, useEffect, and useContext. Focused on React hooks learning.',
     links: [
