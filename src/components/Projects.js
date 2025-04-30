@@ -6,8 +6,8 @@ const projects = [
         title: 'React Portfolio Website',
         description: 'This portfolio built with React. Includes resume download, GitHub links, and contact section. Deployed on Netlify.',
         links: [
-          { label: 'GitHub Repo', url: 'https://github.com/Manjunathrkrishna/portfolio' },
-          { label: 'Live Site', url: 'https://your-netlify-link.netlify.app' }, // update this
+          { label: 'GitHub Repo', url: 'https://github.com/Manjunathrkrishna/portfolio-website' },
+          { label: 'Live Site', url: 'https://manjunathr-portfolio.netlify.app/' }, // update this
         ],
       },
   {
