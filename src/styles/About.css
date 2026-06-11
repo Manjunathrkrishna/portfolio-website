@@ -1,14 +1,241 @@
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    white-space: nowrap; /* keeps it on one line */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 4rem;
+  align-items: start;
+  padding: 2rem 0;
+}
+
+.about-content {
+  animation: slideInLeft 0.6s ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #30363d;
+}
+
+.about-section:last-child {
+  border-bottom: none;
+}
+
+.about-section h3 {
+  font-size: 1.4rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  color: #c9d1d9;
+  line-height: 1.8;
+}
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise-list li {
+  font-size: 1.05rem;
+  color: #c9d1d9;
+  padding: 0.75rem 0 0.75rem 2rem;
+  position: relative;
+  line-height: 1.8;
+}
+
+.expertise-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+.expertise-list strong {
+  color: #79c0ff;
+}
+
+.focus-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.focus-item {
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.focus-item:hover {
+  border-color: #58a6ff;
+  transform: translateY(-5px);
+  background: rgba(88, 166, 255, 0.15);
+}
+
+.focus-item h4 {
+  color: #58a6ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.focus-item p {
+  font-size: 0.95rem;
+  color: #c9d1d9;
+  margin: 0;
+}
+
+/* Sidebar */
+.about-sidebar {
+  animation: slideInRight 0.6s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 15px;
+  border: 3px solid #30363d;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  border-color: #58a6ff;
+  transform: scale(1.05);
+}
+
+.quick-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.stat {
+  background: linear-gradient(135deg, #1f3d1f 0%, #0d1a0d 100%);
+  border: 2px solid #2f7f2f;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(63, 176, 63, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.stat:hover {
+  border-color: #58c958;
+  box-shadow: 0 15px 40px rgba(95, 201, 88, 0.25);
+  transform: translateY(-5px);
+}
+
+.stat:hover::before {
+  left: 100%;
+}
+
+.stat h4 {
+  font-size: 2.5rem;
+  color: #58c958;
+  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.stat p {
+  color: #c9d1d9;
+  font-size: 0.95rem;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-sidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .profile-pic {
+    grid-column: 1 / -1;
+  }
+
+  .stat {
     text-align: center;
   }
-  
-  @media (max-width: 480px) {
-    .about h2 {
-      font-size: 1.5rem;
-      white-space: normal; /* allow wrap if very small screen */
-    }
+}
+
+@media (max-width: 768px) {
+  .about-content h2 {
+    font-size: 2rem;
   }
+
+  .about-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .focus-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .about-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .stat h4 {
+    font-size: 2rem;
+  }
+}
   
