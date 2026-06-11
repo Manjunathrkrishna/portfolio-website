@@ -1,6 +1,6 @@
 // src/components/Home.js
 import React from 'react';
-import { FaReact, FaPython, FaAws, FaNodeJs, FaCode } from 'react-icons/fa';
+import { FaReact, FaPython, FaAws, FaNodeJs, FaCode, FaDocker } from 'react-icons/fa';
 import { SiJavascript, SiFlask, SiDjango, SiFastapi, SiPostgresql, SiMongodb, SiKubernetes, SiOpenai } from 'react-icons/si';
 import '../styles/Home.css';
 
